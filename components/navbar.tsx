@@ -1,5 +1,5 @@
 import { ModeToggle } from "@/components/theme-toggle";
-import { Github, SquareTerminal } from "lucide-react";
+import { Github } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import Search from "./search";
@@ -7,6 +7,7 @@ import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
+import Image from "next/image";
 
 export const NAVLINKS = [
   {
@@ -58,7 +59,7 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5 ">
-      <img src="/anya_stare.ico" alt="Anya Forger Peanut Foundry Logo" className="w-6 h-6" />
+      <Image src="/anya_stare.png" alt="Anya Forger Peanut Foundry Logo" width={24} height={24} />
       <h2 className="text-md font-bold">Peanut Foundry</h2>
     </Link>
   );

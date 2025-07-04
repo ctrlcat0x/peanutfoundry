@@ -3,13 +3,9 @@
 import * as React from "react";
 import {
   PaintbrushVertical,
-  Moon,
-  Coffee,
   Skull,
   Star,
   Zap,
-  Book,
-  Code,
   Palette,
 } from "lucide-react";
 import { useTheme } from "next-themes";
