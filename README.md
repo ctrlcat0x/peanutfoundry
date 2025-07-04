@@ -1,4 +1,4 @@
-# <img src="public/anya_banner_large.png" alt="Anya Forger Peanut Foundry Banner" width="700" style="border-radius:1rem; margin-bottom:1rem;" />
+# <img src="public/anya_banner_main.png" alt="Anya Forger Peanut Foundry Banner" width="700" style="border-radius:1rem; margin-bottom:1rem;" />
 
 # Peanut Foundry
 
