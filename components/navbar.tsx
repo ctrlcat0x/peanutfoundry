@@ -21,7 +21,7 @@ export const NAVLINKS = [
 
 export function Navbar() {
   return (
-    <nav className="w-full border-b h-16 sticky top-0 z-50 bg-background shadow-sm">
+    <nav className="sticky top-0 z-50 h-14 w-full border-b bg-background/80 backdrop-blur-lg supports-[backdrop-filter]:bg-background/70">
       <div className="sm:container mx-auto w-[95vw] h-full flex items-center justify-between md:gap-2">
         <div className="flex items-center gap-5">
           <SheetLeftbar />

@@ -1,95 +1,93 @@
-# Winzilla - Windows Optimization & Debloat Script
+# <img src="public/anya_banner_large.png" alt="Anya Forger Peanut Foundry Banner" width="700" style="border-radius:1rem; margin-bottom:1rem;" />
 
-## Overview
+# Peanut Foundry
 
-Winzilla is a powerful PowerShell script designed to optimize, debloat, and secure Windows systems. It provides a menu-driven interface to execute various system tweaks, including disabling Windows Defender, stopping unnecessary Windows updates, and improving system performance.
+> **Wiki for everything, with recommendations by Anya.**
 
-## Features
+---
 
-- **Administrator Privileges Check**: Ensures the script runs with admin rights and relaunches if necessary.
-- **Chris Titus Tech Script Execution**: Runs CTT's optimization script for Windows.
-- **Windows 11 Debloat (Raphire)**: Executes a debloating script to remove bloatware.
-- **Remove Microsoft Edge**: Downloads and runs a script to uninstall Edge.
-- **Ultimate Performance Power Plan**: Activates the highest performance mode.
-- **Windows Update Security Optimization**: Stops unnecessary updates and sets them to security-only.
-- **Disable Windows Defender**: Disables Windows Defender and related services permanently.
+Peanut Foundry is a playful, modern, and comprehensive wiki/documentation site, powered by Next.js and TailwindCSS. It features a beautiful, accessible UI, glassmorphism, hand-drawn accents, and a unique mascot: **Anya Forger** from Spy x Family.
 
-## Installation
+---
 
-To use Winzilla, follow these steps:
+## ✨ Features
 
-1. **Download the script**:
-   ```powershell
-   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/iam-sahil/winzilla/refs/heads/master/public/win.ps1" -OutFile "Winzilla.ps1"
+- **Modern UI/UX** — Built with Next.js, TailwindCSS, and glassmorphism
+- **Playful Branding** — Anya Forger as mascot, custom accent colors, hand-drawn SVG details
+- **Sectioned Wiki Navigation** — Easy browsing by topic
+- **Quick Links & Search** — Find what you need, fast
+- **Responsive & Accessible** — Works on all devices, keyboard and screen reader friendly
+- **Multiple Themes** — Gruvbox, Halloween, Tokyo Night, Dracula, One Dark
+- **Open Source** — MIT licensed, easy to contribute
+
+---
+
+## 🖼️ Screenshots
+
+![Anya Banner](public/anya_banner_large.png)
+
+Favicon: ![Anya Favicon](public/favicon.ico)
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/ctrlcat0x/peanutfoundry.git
+   cd peanutfoundry
    ```
-
-2. **Run the script with administrator privileges**:
-   ```powershell
-   Set-ExecutionPolicy Bypass -Scope Process -Force; .\Winzilla.ps1
+2. **Install dependencies:**
+   ```bash
+   npm install --force
+   # or
+   yarn install --force
    ```
+3. **Run the dev server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+4. **Open in your browser:**
+   [http://localhost:3000](http://localhost:3000)
 
-## Usage
+---
 
-When you run the script, it will display a menu with the following options:
+## 📁 Folder Structure
 
-```shell
- __     __     __     __   __     ______     __     __         __         ______    
-/\ \  _ \ \   /\ \   /\ "-.\ \   /\___  \   /\ \   /\ \       /\ \       /\  __ \   
-\ \ \/ ".\ \  \ \ \  \ \ \-.  \  \/_/  /__  \ \ \  \ \ \____  \ \ \____  \ \  __ \  
- \ \__/".~\_\  \ \_\  \ \_\"\_\   /\_____\   \ \_\  \ \_____\  \ \_____\  \ \_\ \_\
-  \/_/   \/_/   \/_/   \/_/ \/_/   \/_____/   \/_/   \/_____/   \/_____/   \/_/\/_/
+- `app/` — Next.js app directory (pages, layouts, routes)
+- `components/` — Reusable UI and layout components
+- `contents/` — Markdown docs and wiki content
+- `public/` — Static assets (images, favicon, Anya art)
+- `styles/` — Tailwind and global CSS
 
-Winzilla Menu:
-1. Run CTT (Chris Titus Tech Script)
-2. Run Raphire Win11Debloat
-3. Remove Microsoft Edge
-4. Set Ultimate Performance Power Plan
-5. Set Windows Updates to security only
-6. Disable Windows Defender
-0. Exit
-```
+---
 
-Enter the corresponding number to execute the desired function.
+## 🤝 Contributing
 
-## Functions Breakdown
+Contributions are welcome! Please:
+- Use clear, accessible, and playful language
+- Follow the code style (TypeScript, React, TailwindCSS)
+- Keep the branding and mascot spirit alive
+- Open issues or pull requests for improvements
 
-### 1. `invokeCTT`
-Runs the **Chris Titus Tech** Windows optimization script to tweak and debloat Windows.
+---
 
-### 2. `invokeRaphire`
-Executes **Raphire's** Windows 11 Debloat script to remove unnecessary bloatware.
+## 📜 License
 
-### 3. `removeEdge`
-Downloads and runs a batch script to remove Microsoft Edge.
+MIT License. See [LICENSE](LICENSE) for details.
 
-### 4. `ultimatePowerPlan`
-Checks if the "Ultimate Performance" power plan is available and activates it if not already in use.
+---
 
-### 5. `disableUpdates`
-- Disables automatic driver updates via Windows Update.
-- Prevents Windows from automatically restarting for updates.
-- Sets updates to **Security Only** mode.
+## 🙏 Credits
 
-### 6. `defenderTweaks`
-- Stops Windows Defender and related services.
-- Disables real-time protection and tamper protection.
-- Adds all drives to the Windows Defender exclusion list.
-- Prevents Windows Defender from re-enabling itself.
+- **Mascot:** Anya Forger (Spy x Family, © Tatsuya Endo/Shueisha)
+- **Banner & Favicon:** See `/public/anya_banner_large.png` and `/public/favicon.ico`
+- **UI/UX:** Inspired by modern open-source docs and playful wikis
+- **Maintainer:** [ctrlcat0x](https://github.com/ctrlcat0x)
 
-## Requirements
-- Windows 10 / 11
-- PowerShell (Run as Administrator)
-- Internet access for script downloads
+---
 
-## Disclaimer
-**Use this script at your own risk!** While it is designed to improve system performance and security, modifying system settings can have unintended consequences. Make sure to create a backup before running.
-
-## License
-This project is licensed under the MIT License.
-
-## Contributions
-Pull requests and improvements are welcome. If you have any suggestions, feel free to submit an issue.
-
-## Author
-Developed by **Sahil Rana**.
+> Peanut Foundry: For the curious, the tinkerers, and the peanut lovers. 🥜
 
