@@ -1,0 +1,278 @@
+@import url("./syntax.css");
+
+:root {
+  font-variant-ligatures: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* --- Dark Theme - Applied when data-theme="dark" --- */
+  [data-theme="halloween"] {
+    --background: 240 3% 7%;
+    --foreground: 43 100% 90%;
+    --card: 240 3% 9%;
+    --card-foreground: 43 100% 90%;
+    --popover: 240 3% 9%;
+    --popover-foreground: 43 100% 90%;
+    --primary: 35 78% 50%;
+    --primary-foreground: 240 3% 7%;
+    --secondary: 260 25% 15%;
+    --secondary-foreground: 35 78% 50%;
+    --muted: 260 25% 15%;
+    --muted-foreground: 60 5% 65%;
+    --accent: #ffb700;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 45%;
+    --destructive-foreground: 43 100% 90%;
+    --border: 260 25% 15%;
+    --input: 260 25% 15%;
+    --ring: 35 78% 50%;
+    --chart-1: 35 78% 50%;
+    --chart-2: 43 100% 90%;
+    --chart-3: 0 84.2% 45%;
+    --chart-4: 43 100% 50%;
+    --chart-5: 210 70% 30%;
+    --radius: 0.5rem;
+  }
+
+[data-theme="gruvbox-hard"] {
+  /* Base */
+  --background: 195 7% 12%;      /* #1d2021 */
+  --foreground: 40 52% 81%;      /* #ebdbb2 */
+
+  /* Surfaces */
+  --card: 0 0% 16%;             /* #282828 */
+  --card-foreground: 40 52% 81%; /* #ebdbb2 */
+  --popover: 0 0% 16%;          /* #282828 */
+  --popover-foreground: 40 52% 81%; /* #ebdbb2 */
+
+  /* Main Colors */
+  --primary: 28 99% 55%;         /* #fe8019 */
+  --primary-foreground: 195 7% 12%; /* #1d2021 */
+  --secondary: 61 66% 44%;       /* #b8bb26 */
+  --secondary-foreground: 195 7% 12%; /* #1d2021 */
+  --accent: #83a598;         /* #83a598 */
+  --accent-foreground: 195 7% 12%;   /* #1d2021 */
+  --destructive: 8 96% 59%;      /* #fb4934 */
+  --destructive-foreground: 195 7% 12%; /* #1d2021 */
+
+  /* Muted / Borders / Inputs */
+  --muted: 15 6% 22%;            /* #3c3836 */
+  --muted-foreground: 40 52% 81%;   /* #ebdbb2 */
+  --border: 22 8% 29%;           /* #504945 */
+  --input: 22 8% 29%;            /* #504945 */
+
+  /* Other */
+  --ring: 28 99% 55%;            /* #fe8019 */
+  --radius: 0.5rem;
+
+  /* Charts (example usage) */
+  --chart-1: 28 99% 55%;         /* #fe8019 */
+  --chart-2: 61 66% 44%;         /* #b8bb26 */
+  --chart-3: 165 18% 58%;        /* #83a598 */
+  --chart-4: 344 45% 68%;        /* #d3869b */
+  --chart-5: 43 95% 58%;         /* #fabd2f */
+}
+
+
+  [data-theme="tokyo-night"] {
+    --background: 225 20% 15%;      /* Dark blue background */
+    --foreground: 240 33% 75%;      /* Light, cool text */
+    --card: 225 20% 18%;            /* Slightly lighter for cards */
+    --card-foreground: 240 33% 75%;
+    --popover: 225 20% 18%;
+    --popover-foreground: 240 33% 75%;
+    --primary: 225 90% 70%;         /* Vivid blue accent */
+    --primary-foreground: 0 0% 100%; /* White text for contrast */
+    --secondary: 265 70% 75%;        /* Soft purple accent */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 225 20% 20%;           /* Subdued element background */
+    --muted-foreground: 240 20% 70%;
+    --accent: #867de8;          /* Additional accent tone */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 350 85% 65%;      /* Punchy red for alerts */
+    --destructive-foreground: 0 0% 100%;
+    --border: 225 20% 20%;          /* Consistent border color */
+    --input: 225 20% 20%;
+    --ring: 225 90% 70%;
+    --radius: 0.5rem;
+    --chart-1: 225 90% 70%;
+    --chart-2: 265 70% 75%;
+    --chart-3: 120 60% 60%;         /* A contrasting green for charts */
+    --chart-4: 265 70% 75%;
+    --chart-5: 350 85% 65%;
+  }
+  
+  /* --- Dracula Theme --- */
+[data-theme="dracula"] {
+  --background: 231 15% 18%;    /* #282a36 */
+  --foreground: 60 33% 96%;      /* #f8f8f2 */
+  --card: 231 15% 18%;
+  --card-foreground: 60 33% 96%;
+  --popover: 231 15% 18%;
+  --popover-foreground: 60 33% 96%;
+  --primary: 135 94% 65%;        /* #50fa7b */
+  --primary-foreground: 231 15% 18%;
+  --secondary: 31 100% 71%;       /* #ffb86c */
+  --secondary-foreground: 231 15% 18%;
+  --muted: 225 27% 51%;          /* #6272a4 */
+  --muted-foreground: 60 33% 96%;
+  --accent: #ff7ac6;        /* #ff79c6 */
+  --accent-foreground: 231 15% 18%;
+  --destructive: 0 100% 67%;      /* #ff5555 */
+  --destructive-foreground: 231 15% 18%;
+  --border: 231 15% 16%;
+  --input: 231 15% 16%;
+  --ring: 135 94% 65%;
+  --chart-1: 135 94% 65%;
+  --chart-2: 31 100% 71%;
+  --chart-3: 326 100% 74%;
+  --chart-4: 0 100% 67%;
+  --chart-5: 65 92% 76%;
+  --radius: 0.5rem;
+}
+
+
+/* --- One Dark Theme --- */
+[data-theme="one-dark"] {
+  --background: 210 13% 18%;      /* #282C34 */
+  --foreground: 210 14% 71%;      /* #ABB2BF */
+  --card: 210 13% 18%;
+  --card-foreground: 210 14% 71%;
+  --popover: 210 13% 18%;
+  --popover-foreground: 210 14% 71%;
+  --primary: 357 70% 65%;         /* #E06C75 */
+  --primary-foreground: 210 13% 18%;
+  --secondary: 29 54% 61%;         /* #D19A66 */
+  --secondary-foreground: 210 13% 18%;
+  --muted: 210 20% 40%;           /* muted gray-blue */
+  --muted-foreground: 210 14% 71%;
+  --accent: #61afef;          /* #61AFEF */
+  --accent-foreground: 210 13% 18%;
+  --destructive: 357 80% 60%;     /* slightly adjusted red */
+  --destructive-foreground: 210 13% 18%;
+  --border: 210 13% 16%;
+  --input: 210 13% 16%;
+  --ring: 357 70% 65%;
+  --chart-1: 357 70% 65%;
+  --chart-2: 29 54% 61%;
+  --chart-3: 39 67% 69%;          /* #E5C07B variant */
+  --chart-4: 207 82% 66%;
+  --chart-5: 286 60% 67%;         /* #C678DD */
+  --radius: 0.5rem;
+}
+
+
+  /* --- Global Styles (outside theme blocks) --- */
+  * {
+    @apply border-border; /* Default border color - will use --border variable */
+  }
+
+  body {
+    @apply bg-background text-foreground; /* Default body styles - use --background, --foreground */
+  }
+}
+
+[data-theme], :root {
+  --accent-bg-5: color-mix(in srgb, var(--accent) 5%, transparent);
+  --accent-bg-10: color-mix(in srgb, var(--accent) 10%, transparent);
+  --accent-bg-20: color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.accent-box {
+  background: var(--accent-bg-5);
+  border-color: var(--accent-bg-10);
+  color: var(--accent);
+  transition: background 0.2s;
+}
+.accent-box:hover,
+.accent-box:focus-visible {
+  background: var(--accent-bg-10);
+  border-color: var(--accent-bg-20);
+}
+.prose {
+  margin: 0 !important;
+}
+
+pre {
+  padding: 2px 0 !important;
+  width: inherit !important;
+  overflow-x: auto;
+}
+
+pre > code {
+  display: grid;
+  max-width: inherit !important;
+  padding: 14px 0 !important;
+}
+
+.code-line {
+  padding: 0.75px 16px;
+  @apply border-l-2 border-transparent;
+}
+
+.line-number::before {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 22px;
+  margin-left: -2px;
+  color: rgb(110, 110, 110);
+  content: attr(line);
+  font-size: 13.5px;
+  text-align: right;
+}
+
+.highlight-line {
+  @apply bg-primary/5 border-l-2 border-primary/30;
+}
+
+.rehype-code-title {
+  @apply px-2 -mb-8 w-full text-sm pb-5 font-medium mt-5 font-code;
+}
+
+.highlight-comp > code {
+  background-color: transparent !important;
+}
+
+
+
+:root {
+  --scrollbar-thumb: hsl(var(--primary)); /* Softer gray for dark-like themes */
+}
+
+/* Apply globally */
+* {
+  scrollbar-width: thin;
+  /* Firefox thin scrollbar */
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+  /* Thumb color with transparent track */
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  /* Vertical scrollbar width */
+  height: 8px;
+  /* Horizontal scrollbar height */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  /* Thumb color */
+  border-radius: 9999px;
+  /* Fully rounded thumb */
+  border: 2px solid transparent;
+  /* Thin padding effect */
+  background-clip: content-box;
+  /* Smooth thumb edges */
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Transparent track */
+}
+::selection {
+  background-color: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
