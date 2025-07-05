@@ -6,12 +6,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex sm:min-h-[85.5vh] min-h-[85vh] flex-col items-center justify-center text-center px-2 sm:py-8 py-12 relative overflow-hidden">
-      {/* Decorative Sparkle Background Overlay */}
       <div
         aria-hidden="true"
-        className="pointer-events-none fixed inset-0 w-screen h-screen z-0 starBack"
+        className="pointer-events-none fixed inset-0 w-screen h-screen z-0"
       />
-      {/* Anya Banner */}
       <div className="w-full flex justify-center mb-6 -mt-6 sm:-mt-8">
         <Image
           src="/anya_banner_large.png"
@@ -38,7 +36,7 @@ export default function Home() {
           <Star className="w-5 h-5 sm:w-7 sm:h-7 rotate-[-10deg]" />
         </span>
         <p className="mb-8 sm:text-xl text-lg max-w-[800px] mt-2 text-accent drop-shadow-sm flex items-center gap-2">
-          Your Wiki for everything, with recommendations by Anya.
+          Your Wiki for everything, with recommendations from Anya.
         </p>
         <span className="absolute right-40 sm:right-60 top-2 text-primary">
           <Sparkles className="w-5 h-5 sm:w-7 sm:h-7 rotate-[10deg]" />

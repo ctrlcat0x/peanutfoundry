@@ -52,11 +52,12 @@ export default function Search() {
             <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-stone-500 dark:text-stone-400" />
             <Input
               className="md:w-full rounded-md dark:bg-background/95 bg-background border h-9 pl-10 pr-0 sm:pr-7 text-sm shadow-sm overflow-ellipsis"
-              placeholder="Search documentation..."
+              placeholder="Search the wiki..."
               type="search"
             />
-            <div className="sm:flex hidden absolute top-1/2 -translate-y-1/2 right-2 text-xs font-medium font-mono items-center gap-0.5 p-1 rounded-sm">
+            <div className="sm:flex hidden absolute top-1/2 text-stone-300 -translate-y-1/2 right-2 text-xs font-medium font-mono items-center gap-0.5 p-1 rounded-sm">
               <CommandIcon className="w-3 h-3" />
+              <span>+</span>
               <span>k</span>
             </div>
           </div>

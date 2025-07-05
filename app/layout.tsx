@@ -40,6 +40,7 @@ export default function RootLayout({
         className={`${sansFont.variable} ${monoFont.variable} font-regular antialiased tracking-wide`}
         suppressHydrationWarning
       >
+        <div className="starBack fixed inset-0 pointer-events-none" aria-hidden="true" />
         <ThemeProvider>
           <Navbar />
           <main className="sm:container mx-auto w-[90vw] h-auto scroll-smooth">

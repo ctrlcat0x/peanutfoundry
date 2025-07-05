@@ -11,161 +11,434 @@
 @layer base {
   /* --- Dark Theme - Applied when data-theme="dark" --- */
   [data-theme="halloween"] {
-    --background: 240 3% 7%;
-    --foreground: 43 100% 90%;
-    --card: 240 3% 9%;
-    --card-foreground: 43 100% 90%;
-    --popover: 240 3% 9%;
-    --popover-foreground: 43 100% 90%;
-    --primary: 35 78% 50%;
-    --primary-foreground: 240 3% 7%;
-    --secondary: 260 25% 15%;
-    --secondary-foreground: 35 78% 50%;
-    --muted: 260 25% 15%;
-    --muted-foreground: 60 5% 65%;
-    --accent: #ffb700;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 84.2% 45%;
-    --destructive-foreground: 43 100% 90%;
-    --border: 260 25% 15%;
-    --input: 260 25% 15%;
-    --ring: 35 78% 50%;
-    --chart-1: 35 78% 50%;
-    --chart-2: 43 100% 90%;
-    --chart-3: 0 84.2% 45%;
-    --chart-4: 43 100% 50%;
+    --background: 240 5% 8%;
+    --foreground: 45 100% 92%;
+    --card: 240 5% 12%;
+    --card-foreground: 45 100% 92%;
+    --popover: 240 5% 12%;
+    --popover-foreground: 45 100% 92%;
+    --primary: 35 90% 55%;
+    --primary-foreground: 240 5% 8%;
+    --secondary: 260 30% 18%;
+    --secondary-foreground: 35 90% 55%;
+    --muted: 260 30% 18%;
+    --muted-foreground: 60 8% 70%;
+    --accent: 45 100% 55%;
+    --accent-foreground: 240 5% 8%;
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 45 100% 92%;
+    --border: 260 30% 18%;
+    --input: 260 30% 18%;
+    --ring: 35 90% 55%;
+    --chart-1: 35 90% 55%;
+    --chart-2: 45 100% 92%;
+    --chart-3: 0 84% 50%;
+    --chart-4: 45 100% 55%;
     --chart-5: 210 70% 30%;
     --radius: 0.5rem;
   }
 
-[data-theme="gruvbox-hard"] {
-  /* Base */
-  --background: 195 7% 12%;      /* #1d2021 */
-  --foreground: 40 52% 81%;      /* #ebdbb2 */
+  /* --- Gruvbox Hard (refined) --- */
+  [data-theme="gruvbox-hard"] {
+    --background: 30 10% 12%;
+    --foreground: 40 60% 85%;
+    --card: 30 10% 16%;
+    --card-foreground: 40 60% 85%;
+    --popover: 30 10% 16%;
+    --popover-foreground: 40 60% 85%;
+    --primary: 28 98% 60%;
+    --primary-foreground: 30 10% 12%;
+    --secondary: 61 70% 50%;
+    --secondary-foreground: 30 10% 12%;
+    --accent: 157 20% 60%;
+    --accent-foreground: 30 10% 12%;
+    --destructive: 8 96% 60%;
+    --destructive-foreground: 30 10% 12%;
+    --muted: 30 10% 22%;
+    --muted-foreground: 40 60% 85%;
+    --border: 30 10% 29%;
+    --input: 30 10% 29%;
+    --ring: 28 98% 60%;
+    --chart-1: 28 98% 60%;
+    --chart-2: 61 70% 50%;
+    --chart-3: 157 20% 60%;
+    --chart-4: 344 45% 68%;
+    --chart-5: 43 95% 58%;
+    --radius: 0.5rem;
+  }
 
-  /* Surfaces */
-  --card: 0 0% 16%;             /* #282828 */
-  --card-foreground: 40 52% 81%; /* #ebdbb2 */
-  --popover: 0 0% 16%;          /* #282828 */
-  --popover-foreground: 40 52% 81%; /* #ebdbb2 */
-
-  /* Main Colors */
-  --primary: 28 99% 55%;         /* #fe8019 */
-  --primary-foreground: 195 7% 12%; /* #1d2021 */
-  --secondary: 61 66% 44%;       /* #b8bb26 */
-  --secondary-foreground: 195 7% 12%; /* #1d2021 */
-  --accent: #83a598;         /* #83a598 */
-  --accent-foreground: 195 7% 12%;   /* #1d2021 */
-  --destructive: 8 96% 59%;      /* #fb4934 */
-  --destructive-foreground: 195 7% 12%; /* #1d2021 */
-
-  /* Muted / Borders / Inputs */
-  --muted: 15 6% 22%;            /* #3c3836 */
-  --muted-foreground: 40 52% 81%;   /* #ebdbb2 */
-  --border: 22 8% 29%;           /* #504945 */
-  --input: 22 8% 29%;            /* #504945 */
-
-  /* Other */
-  --ring: 28 99% 55%;            /* #fe8019 */
-  --radius: 0.5rem;
-
-  /* Charts (example usage) */
-  --chart-1: 28 99% 55%;         /* #fe8019 */
-  --chart-2: 61 66% 44%;         /* #b8bb26 */
-  --chart-3: 165 18% 58%;        /* #83a598 */
-  --chart-4: 344 45% 68%;        /* #d3869b */
-  --chart-5: 43 95% 58%;         /* #fabd2f */
-}
-
-
+  /* --- Tokyo Night (refined) --- */
   [data-theme="tokyo-night"] {
-    --background: 225 20% 15%;      /* Dark blue background */
-    --foreground: 240 33% 75%;      /* Light, cool text */
-    --card: 225 20% 18%;            /* Slightly lighter for cards */
-    --card-foreground: 240 33% 75%;
+    --background: 225 20% 14%;
+    --foreground: 240 33% 80%;
+    --card: 225 20% 18%;
+    --card-foreground: 240 33% 80%;
     --popover: 225 20% 18%;
-    --popover-foreground: 240 33% 75%;
-    --primary: 225 90% 70%;         /* Vivid blue accent */
-    --primary-foreground: 0 0% 100%; /* White text for contrast */
-    --secondary: 265 70% 75%;        /* Soft purple accent */
+    --popover-foreground: 240 33% 80%;
+    --primary: 225 90% 70%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 265 70% 75%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 225 20% 20%;           /* Subdued element background */
+    --muted: 225 20% 20%;
     --muted-foreground: 240 20% 70%;
-    --accent: #867de8;          /* Additional accent tone */
+    --accent: 245 70% 70%;
     --accent-foreground: 0 0% 100%;
-    --destructive: 350 85% 65%;      /* Punchy red for alerts */
+    --destructive: 350 85% 65%;
     --destructive-foreground: 0 0% 100%;
-    --border: 225 20% 20%;          /* Consistent border color */
+    --border: 225 20% 20%;
     --input: 225 20% 20%;
     --ring: 225 90% 70%;
-    --radius: 0.5rem;
     --chart-1: 225 90% 70%;
     --chart-2: 265 70% 75%;
-    --chart-3: 120 60% 60%;         /* A contrasting green for charts */
+    --chart-3: 120 60% 60%;
     --chart-4: 265 70% 75%;
     --chart-5: 350 85% 65%;
+    --radius: 0.5rem;
   }
-  
-  /* --- Dracula Theme --- */
-[data-theme="dracula"] {
-  --background: 231 15% 18%;    /* #282a36 */
-  --foreground: 60 33% 96%;      /* #f8f8f2 */
-  --card: 231 15% 18%;
-  --card-foreground: 60 33% 96%;
-  --popover: 231 15% 18%;
-  --popover-foreground: 60 33% 96%;
-  --primary: 135 94% 65%;        /* #50fa7b */
-  --primary-foreground: 231 15% 18%;
-  --secondary: 31 100% 71%;       /* #ffb86c */
-  --secondary-foreground: 231 15% 18%;
-  --muted: 225 27% 51%;          /* #6272a4 */
-  --muted-foreground: 60 33% 96%;
-  --accent: #ff7ac6;        /* #ff79c6 */
-  --accent-foreground: 231 15% 18%;
-  --destructive: 0 100% 67%;      /* #ff5555 */
-  --destructive-foreground: 231 15% 18%;
-  --border: 231 15% 16%;
-  --input: 231 15% 16%;
-  --ring: 135 94% 65%;
-  --chart-1: 135 94% 65%;
-  --chart-2: 31 100% 71%;
-  --chart-3: 326 100% 74%;
-  --chart-4: 0 100% 67%;
-  --chart-5: 65 92% 76%;
+
+  /* --- Dracula (refined) --- */
+  [data-theme="dracula"] {
+    --background: 231 15% 16%;
+    --foreground: 60 33% 98%;
+    --card: 231 15% 20%;
+    --card-foreground: 60 33% 98%;
+    --popover: 231 15% 20%;
+    --popover-foreground: 60 33% 98%;
+    --primary: 191 97% 77%; /* cyan #8be9fd */
+    --primary-foreground: 231 15% 16%;
+    --secondary: 265 89% 78%; /* purple #bd93f9 */
+    --secondary-foreground: 231 15% 16%;
+    --muted: 225 27% 55%;
+    --muted-foreground: 60 33% 98%;
+    --accent: 326 100% 80%; /* pink #ff79c6 */
+    --accent-foreground: 231 15% 16%;
+    --destructive: 0 100% 70%; /* red #ff5555 */
+    --destructive-foreground: 231 15% 16%;
+    --border: 231 15% 18%;
+    --input: 231 15% 18%;
+    --ring: 326 100% 80%; /* pink for focus */
+    --chart-1: 191 97% 77%; /* cyan */
+    --chart-2: 265 89% 78%; /* purple */
+    --chart-3: 326 100% 80%; /* pink */
+    --chart-4: 0 100% 70%; /* red */
+    --chart-5: 60 33% 98%; /* white/foreground */
+    --radius: 0.5rem;
+  }
+
+  /* --- One Dark (refined) --- */
+  [data-theme="one-dark"] {
+    --background: 210 13% 16%;
+    --foreground: 210 14% 80%;
+    --card: 210 13% 20%;
+    --card-foreground: 210 14% 80%;
+    --popover: 210 13% 20%;
+    --popover-foreground: 210 14% 80%;
+    --primary: 357 70% 70%;
+    --primary-foreground: 210 13% 16%;
+    --secondary: 29 54% 65%;
+    --secondary-foreground: 210 13% 16%;
+    --muted: 210 20% 45%;
+    --muted-foreground: 210 14% 80%;
+    --accent: 207 82% 70%;
+    --accent-foreground: 210 13% 16%;
+    --destructive: 357 80% 65%;
+    --destructive-foreground: 210 13% 16%;
+    --border: 210 13% 18%;
+    --input: 210 13% 18%;
+    --ring: 357 70% 70%;
+    --chart-1: 357 70% 70%;
+    --chart-2: 29 54% 65%;
+    --chart-3: 39 67% 75%;
+    --chart-4: 207 82% 70%;
+    --chart-5: 286 60% 75%;
+    --radius: 0.5rem;
+  }
+
+  /* --- Nord --- */
+  [data-theme="nord"] {
+    --background: 220 16% 20%;
+    --foreground: 220 16% 85%;
+    --card: 220 16% 24%;
+    --card-foreground: 220 16% 85%;
+    --popover: 220 16% 24%;
+    --popover-foreground: 220 16% 85%;
+    --primary: 210 34% 60%;
+    --primary-foreground: 220 16% 20%;
+    --secondary: 222 23% 60%;
+    --secondary-foreground: 220 16% 20%;
+    --muted: 220 16% 30%;
+    --muted-foreground: 220 16% 85%;
+    --accent: 193 32% 68%;
+    --accent-foreground: 220 16% 20%;
+    --destructive: 356 69% 56%;
+    --destructive-foreground: 220 16% 20%;
+    --border: 220 16% 28%;
+    --input: 220 16% 28%;
+    --ring: 210 34% 60%;
+    --chart-1: 210 34% 60%;
+    --chart-2: 193 32% 68%;
+    --chart-3: 356 69% 56%;
+    --chart-4: 222 23% 60%;
+    --chart-5: 220 16% 85%;
+    --radius: 0.5rem;
+  }
+
+  /* --- Rose Pine --- */
+  [data-theme="rose-pine"] {
+    --background: 250 20% 15%;
+    --foreground: 330 20% 90%;
+    --card: 250 20% 19%;
+    --card-foreground: 330 20% 90%;
+    --popover: 250 20% 19%;
+    --popover-foreground: 330 20% 90%;
+    --primary: 330 60% 70%;
+    --primary-foreground: 250 20% 15%;
+    --secondary: 250 30% 30%;
+    --secondary-foreground: 330 20% 90%;
+    --muted: 250 20% 25%;
+    --muted-foreground: 330 20% 90%;
+    --accent: 270 60% 70%;
+    --accent-foreground: 250 20% 15%;
+    --destructive: 10 80% 60%;
+    --destructive-foreground: 250 20% 15%;
+    --border: 250 20% 22%;
+    --input: 250 20% 22%;
+    --ring: 330 60% 70%;
+    --chart-1: 330 60% 70%;
+    --chart-2: 270 60% 70%;
+    --chart-3: 10 80% 60%;
+    --chart-4: 250 30% 30%;
+    --chart-5: 330 20% 90%;
+    --radius: 0.5rem;
+  }
+
+  /* --- Catppuccin --- */
+  [data-theme="catppuccin"] {
+    --background: 230 20% 18%;
+    --foreground: 220 30% 85%;
+    --card: 230 20% 22%;
+    --card-foreground: 220 30% 85%;
+    --popover: 230 20% 22%;
+    --popover-foreground: 220 30% 85%;
+    --primary: 280 60% 70%;
+    --primary-foreground: 230 20% 18%;
+    --secondary: 200 30% 60%;
+    --secondary-foreground: 230 20% 18%;
+    --muted: 230 20% 28%;
+    --muted-foreground: 220 30% 85%;
+    --accent: 340 80% 70%;
+    --accent-foreground: 230 20% 18%;
+    --destructive: 0 80% 60%;
+    --destructive-foreground: 230 20% 18%;
+    --border: 230 20% 25%;
+    --input: 230 20% 25%;
+    --ring: 280 60% 70%;
+    --chart-1: 280 60% 70%;
+    --chart-2: 340 80% 70%;
+    --chart-3: 0 80% 60%;
+    --chart-4: 200 30% 60%;
+    --chart-5: 220 30% 85%;
+    --radius: 0.5rem;
+  }
+
+  /* --- Solarized Dark --- */
+  [data-theme="solarized-dark"] {
+    --background: 210 22% 18%;
+    --foreground: 45 89% 85%;
+    --card: 210 22% 22%;
+    --card-foreground: 45 89% 85%;
+    --popover: 210 22% 22%;
+    --popover-foreground: 45 89% 85%;
+    --primary: 33 100% 50%;
+    --primary-foreground: 210 22% 18%;
+    --secondary: 180 25% 35%;
+    --secondary-foreground: 210 22% 18%;
+    --muted: 210 22% 28%;
+    --muted-foreground: 45 89% 85%;
+    --accent: 190 60% 60%;
+    --accent-foreground: 210 22% 18%;
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 210 22% 18%;
+    --border: 210 22% 25%;
+    --input: 210 22% 25%;
+    --ring: 33 100% 50%;
+    --chart-1: 33 100% 50%;
+    --chart-2: 190 60% 60%;
+    --chart-3: 0 70% 60%;
+    --chart-4: 180 25% 35%;
+    --chart-5: 45 89% 85%;
+    --radius: 0.5rem;
+  }
+
+  /* --- Material Ocean --- */
+  [data-theme="material-ocean"] {
+    --background: 210 60% 16%;
+    --foreground: 190 60% 85%;
+    --card: 210 60% 20%;
+    --card-foreground: 190 60% 85%;
+    --popover: 210 60% 20%;
+    --popover-foreground: 190 60% 85%;
+    --primary: 190 80% 60%;
+    --primary-foreground: 210 60% 16%;
+    --secondary: 165 60% 55%;
+    --secondary-foreground: 210 60% 16%;
+    --muted: 210 30% 30%;
+    --muted-foreground: 190 60% 85%;
+    --accent: 190 100% 70%;
+    --accent-foreground: 210 60% 16%;
+    --destructive: 8 80% 60%;
+    --destructive-foreground: 210 60% 16%;
+    --border: 210 30% 28%;
+    --input: 210 30% 28%;
+    --ring: 190 100% 70%;
+    --chart-1: 190 80% 60%;
+    --chart-2: 165 60% 55%;
+    --chart-3: 8 80% 60%;
+    --chart-4: 210 30% 40%;
+    --chart-5: 190 60% 85%;
+    --radius: 0.5rem;
+  }
+
+/* --- GitHub Dark --- */
+[data-theme="github-dark"] {
+  --background: 222 13% 13%;
+  --foreground: 210 15% 85%;
+  --card: 222 13% 16%;
+  --card-foreground: 210 15% 85%;
+  --popover: 222 13% 16%;
+  --popover-foreground: 210 15% 85%;
+  --primary: 212 100% 60%;
+  --primary-foreground: 222 13% 13%;
+  --secondary: 220 14% 25%;
+  --secondary-foreground: 210 15% 85%;
+  --muted: 222 13% 20%;
+  --muted-foreground: 210 15% 85%;
+  --accent: 212 89% 62%; /* #539bf5 */
+  --accent-foreground: 222 13% 13%;
+  --destructive: 0 80% 60%;
+  --destructive-foreground: 222 13% 13%;
+  --border: 222 13% 18%;
+  --input: 222 13% 18%;
+  --ring: 212 89% 62%;
+  --chart-1: 212 100% 60%;
+  --chart-2: 39 100% 60%;
+  --chart-3: 0 80% 60%;
+  --chart-4: 140 40% 60%;
+  --chart-5: 210 15% 85%;
   --radius: 0.5rem;
 }
-
-
-/* --- One Dark Theme --- */
-[data-theme="one-dark"] {
-  --background: 210 13% 18%;      /* #282C34 */
-  --foreground: 210 14% 71%;      /* #ABB2BF */
-  --card: 210 13% 18%;
-  --card-foreground: 210 14% 71%;
-  --popover: 210 13% 18%;
-  --popover-foreground: 210 14% 71%;
-  --primary: 357 70% 65%;         /* #E06C75 */
-  --primary-foreground: 210 13% 18%;
-  --secondary: 29 54% 61%;         /* #D19A66 */
-  --secondary-foreground: 210 13% 18%;
-  --muted: 210 20% 40%;           /* muted gray-blue */
-  --muted-foreground: 210 14% 71%;
-  --accent: #61afef;          /* #61AFEF */
-  --accent-foreground: 210 13% 18%;
-  --destructive: 357 80% 60%;     /* slightly adjusted red */
-  --destructive-foreground: 210 13% 18%;
-  --border: 210 13% 16%;
-  --input: 210 13% 16%;
-  --ring: 357 70% 65%;
-  --chart-1: 357 70% 65%;
-  --chart-2: 29 54% 61%;
-  --chart-3: 39 67% 69%;          /* #E5C07B variant */
-  --chart-4: 207 82% 66%;
-  --chart-5: 286 60% 67%;         /* #C678DD */
+/* --- Night Owl --- */
+[data-theme="night-owl"] {
+  --background: 222 26% 18%;
+  --foreground: 210 20% 90%;
+  --card: 222 26% 22%;
+  --card-foreground: 210 20% 90%;
+  --popover: 222 26% 22%;
+  --popover-foreground: 210 20% 90%;
+  --primary: 222 100% 70%;
+  --primary-foreground: 222 26% 18%;
+  --secondary: 222 30% 40%;
+  --secondary-foreground: 210 20% 90%;
+  --muted: 222 26% 28%;
+  --muted-foreground: 210 20% 90%;
+  --accent: 222 100% 75%; /* #82aaff */
+  --accent-foreground: 222 26% 18%;
+  --destructive: 0 80% 60%;
+  --destructive-foreground: 222 26% 18%;
+  --border: 222 26% 25%;
+  --input: 222 26% 25%;
+  --ring: 222 100% 75%;
+  --chart-1: 222 100% 70%;
+  --chart-2: 222 100% 75%;
+  --chart-3: 0 80% 60%;
+  --chart-4: 140 40% 60%;
+  --chart-5: 210 20% 90%;
   --radius: 0.5rem;
 }
-
-
+/* --- Ayu Dark --- */
+[data-theme="ayu-dark"] {
+  --background: 30 22% 20%;
+  --foreground: 40 30% 90%;
+  --card: 30 22% 24%;
+  --card-foreground: 40 30% 90%;
+  --popover: 30 22% 24%;
+  --popover-foreground: 40 30% 90%;
+  --primary: 40 100% 60%;
+  --primary-foreground: 30 22% 20%;
+  --secondary: 50 100% 70%;
+  --secondary-foreground: 30 22% 20%;
+  --muted: 30 22% 28%;
+  --muted-foreground: 40 30% 90%;
+  --accent: 38 100% 66%; /* #ffb454 */
+  --accent-foreground: 30 22% 20%;
+  --destructive: 0 80% 60%;
+  --destructive-foreground: 30 22% 20%;
+  --border: 30 22% 25%;
+  --input: 30 22% 25%;
+  --ring: 38 100% 66%;
+  --chart-1: 40 100% 60%;
+  --chart-2: 38 100% 66%;
+  --chart-3: 0 80% 60%;
+  --chart-4: 140 40% 60%;
+  --chart-5: 40 30% 90%;
+  --radius: 0.5rem;
+}
+/* --- Palenight --- */
+[data-theme="palenight"] {
+  --background: 232 19% 24%;
+  --foreground: 260 20% 90%;
+  --card: 232 19% 28%;
+  --card-foreground: 260 20% 90%;
+  --popover: 232 19% 28%;
+  --popover-foreground: 260 20% 90%;
+  --primary: 265 80% 75%;
+  --primary-foreground: 232 19% 24%;
+  --secondary: 200 40% 60%;
+  --secondary-foreground: 232 19% 24%;
+  --muted: 232 19% 32%;
+  --muted-foreground: 260 20% 90%;
+  --accent: 280 70% 75%; /* #c792ea */
+  --accent-foreground: 232 19% 24%;
+  --destructive: 0 80% 60%;
+  --destructive-foreground: 232 19% 24%;
+  --border: 232 19% 30%;
+  --input: 232 19% 30%;
+  --ring: 280 70% 75%;
+  --chart-1: 265 80% 75%;
+  --chart-2: 280 70% 75%;
+  --chart-3: 0 80% 60%;
+  --chart-4: 140 40% 60%;
+  --chart-5: 260 20% 90%;
+  --radius: 0.5rem;
+}
+/* --- Everforest --- */
+[data-theme="everforest"] {
+  --background: 90 15% 18%;
+  --foreground: 90 30% 85%;
+  --card: 90 15% 22%;
+  --card-foreground: 90 30% 85%;
+  --popover: 90 15% 22%;
+  --popover-foreground: 90 30% 85%;
+  --primary: 90 40% 60%;
+  --primary-foreground: 90 15% 18%;
+  --secondary: 60 30% 60%;
+  --secondary-foreground: 90 15% 18%;
+  --muted: 90 15% 28%;
+  --muted-foreground: 90 30% 85%;
+  --accent: 90 30% 70%; /* #a7c080 */
+  --accent-foreground: 90 15% 18%;
+  --destructive: 0 80% 60%;
+  --destructive-foreground: 90 15% 18%;
+  --border: 90 15% 25%;
+  --input: 90 15% 25%;
+  --ring: 90 30% 70%;
+  --chart-1: 90 40% 60%;
+  --chart-2: 90 30% 70%;
+  --chart-3: 0 80% 60%;
+  --chart-4: 60 30% 60%;
+  --chart-5: 90 30% 85%;
+  --radius: 0.5rem;
+}
   /* --- Global Styles (outside theme blocks) --- */
   * {
     @apply border-border; /* Default border color - will use --border variable */
@@ -177,16 +450,16 @@
 }
 
 [data-theme], :root {
-  --accent-bg-10: color-mix(in srgb, var(--accent) 10%, transparent);
-  --accent-bg-20: color-mix(in srgb, var(--accent) 20%, transparent);
-  --accent-bg-30: color-mix(in srgb, var(--accent) 30%, transparent);
-  --accent-bg-40: color-mix(in srgb, var(--accent) 40%, transparent);
+  --accent-bg-10: color-mix(in srgb, hsl(var(--accent)) 10%, transparent);
+  --accent-bg-20: color-mix(in srgb, hsl(var(--accent)) 20%, transparent);
+  --accent-bg-30: color-mix(in srgb, hsl(var(--accent)) 30%, transparent);
+  --accent-bg-40: color-mix(in srgb, hsl(var(--accent)) 40%, transparent);
 }
 
 .accent-box {
   background: var(--accent-bg-20);
   border-color: var(--accent-bg-30);
-  color: var(--accent);
+  color: hsl(var(--accent));
   transition: background 0.2s;
 }
 .accent-box:hover,
@@ -238,8 +511,6 @@ pre > code {
   background-color: transparent !important;
 }
 
-
-
 :root {
   --scrollbar-thumb: hsl(var(--primary)); /* Softer gray for dark-like themes */
 }
@@ -278,10 +549,55 @@ pre > code {
   color: hsl(var(--background));
 }
 .starBack {
-  opacity: 0.013;
-  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%23eab308' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%23eab308' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%23eab308' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
-  background-repeat: 'repeat';
-  background-size: '120px 120px';
-  background-position: 'center';
+  opacity: 0.014;
+  background-repeat: repeat;
+  background-size: 120px 120px;
+  background-position: center;
   z-index: -100;
+}
+
+[data-theme="halloween"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%23ffe066' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%23ffe066' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%23ffe066' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="gruvbox-hard"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%2383a598' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%2383a598' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%2383a598' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="tokyo-night"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%23b4befe' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%23b4befe' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%23b4befe' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="dracula"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%23ff79c6' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%23ff79c6' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%23ff79c6' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="one-dark"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%2361afef' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%2361afef' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%2361afef' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="nord"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%237fbbb3' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%237fbbb3' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%237fbbb3' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="rose-pine"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%23b1a7f2' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%23b1a7f2' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%23b1a7f2' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="catppuccin"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%23f5bde6' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%23f5bde6' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%23f5bde6' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="solarized-dark"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%234ecdc4' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%234ecdc4' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%234ecdc4' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="material-ocean"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%2343e6e1' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%2343e6e1' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%2343e6e1' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="github-dark"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%23539bf5' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%23539bf5' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%23539bf5' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="night-owl"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%2382aaff' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%2382aaff' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%2382aaff' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="ayu-dark"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%23ffb454' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%23ffb454' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%23ffb454' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="palenight"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%23c792ea' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%23c792ea' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%23c792ea' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+[data-theme="everforest"] .starBack {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 10 L65 35 L90 40 L65 45 L60 70 L55 45 L30 40 L55 35 Z' stroke='%23a7c080' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='90' r='8' stroke='%23a7c080' stroke-width='2' fill='none'/%3E%3Cpath d='M20 100 L25 110 L30 100 L25 90 Z' stroke='%23a7c080' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
 }

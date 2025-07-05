@@ -34,7 +34,7 @@ export default function SubLink({
     >
       {title}
       {tag && (
-        <span className="dark:bg-green-700 bg-green-500 rounded-md px-1.5 py-0.5 mx-2 text-xs text-white !font-normal">
+        <span className="bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] rounded-md px-1.5 py-0.5 mx-2 text-xs !font-normal">
           {tag}
         </span>
       )}
@@ -51,7 +51,7 @@ export default function SubLink({
     <h4 className="font-medium sm:text-sm text-primary">
       {title}
       {tag && (
-        <span className="dark:bg-green-700 bg-green-500 rounded-md px-1.5 py-0.5 mx-2 text-xs text-white !font-normal">
+        <span className="bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] rounded-md px-1.5 py-0.5 mx-2 text-xs !font-normal">
           {tag}
         </span>
       )}

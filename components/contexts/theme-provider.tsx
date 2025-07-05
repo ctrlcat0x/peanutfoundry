@@ -13,7 +13,7 @@ export function ThemeProvider({
     <NextThemesProvider
       {...props}
       attribute="data-theme"
-      defaultTheme="gruvbox-hard"
+      defaultTheme="rose-pine"
       enableSystem={false}
     >
       {children}

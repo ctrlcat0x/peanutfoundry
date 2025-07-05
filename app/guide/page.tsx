@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Winzilla - Guides",
+  title: "Peanut Foundry - Guides",
 };
 
 export default async function BlogIndexPage() {
