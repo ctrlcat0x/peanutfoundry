@@ -5,6 +5,7 @@ import { page_routes } from "@/lib/routes-config";
 import { notFound } from "next/navigation";
 import { getDocsForSlug } from "@/lib/markdown";
 import { Typography } from "@/components/typography";
+import NsfwGate from "@/components/NsfwGate";
 
 type PageProps = {
   params: Promise<{ slug: string[] }>;
@@ -12,14 +13,13 @@ type PageProps = {
 
 export default async function DocsPage(props: PageProps) {
   const params = await props.params;
-
   const { slug = [] } = params;
-
   const pathName = slug.join("/");
   const res = await getDocsForSlug(pathName);
-
   if (!res) notFound();
-  return (
+
+  const isNsfw = slug[0] === "wiki" && slug[1] === "nsfw";
+  const content = (
     <div className="flex items-start gap-10">
       <div className="flex-[4.5] pt-10">
         <DocsBreadcrumb paths={slug} />
@@ -37,6 +37,8 @@ export default async function DocsPage(props: PageProps) {
       <Toc path={pathName} />
     </div>
   );
+
+  return isNsfw ? <NsfwGate>{content}</NsfwGate> : content;
 }
 
 export async function generateMetadata(props: PageProps) {

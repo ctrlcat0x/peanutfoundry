@@ -122,3 +122,29 @@ export {
   DialogTitle,
   DialogDescription,
 };
+
+import type { ReactNode } from "react";
+
+export function DialogAlert({
+  open,
+  title,
+  description,
+  children,
+}: {
+  open: boolean;
+  title: string;
+  description?: string;
+  children: ReactNode;
+}) {
+  return (
+    <Dialog open={open}>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>{title}</DialogTitle>
+          {description && <DialogDescription>{description}</DialogDescription>}
+        </DialogHeader>
+        {children}
+      </DialogContent>
+    </Dialog>
+  );
+}
