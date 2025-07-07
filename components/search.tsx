@@ -1,6 +1,6 @@
 "use client";
 
-import { CommandIcon, FileIcon, SearchIcon } from "lucide-react";
+import { FileIcon, SearchIcon } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
   Dialog,
