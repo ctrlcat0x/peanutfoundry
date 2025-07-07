@@ -45,7 +45,7 @@ export default function Home() {
       {/* Quick Links */}
       <div className="flex flex-wrap gap-4 justify-center mb-6">
         <Link
-          href="/docs/getting-started/introduction"
+          href="/docs/getting-started/beginners-guide"
           className={buttonVariants({ variant: "default", size: "lg" }) + " min-w-[140px]"}
           tabIndex={0}
           aria-label="Get Started"

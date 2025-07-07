@@ -56,9 +56,12 @@ export default function Search() {
               type="search"
             />
             <div className="sm:flex hidden absolute top-1/2 text-stone-300 -translate-y-1/2 right-2 text-xs font-medium font-mono items-center gap-0.5 p-1 rounded-sm">
-              <CommandIcon className="w-3 h-3" />
-              <span>+</span>
-              <span>k</span>
+            <div className="bg-background/30 border rounded-md py-0.5 px-1 dark:border-neutral-700 border-neutral-300">
+              Ctrl
+            </div>
+            <div className="bg-background/30 border rounded-md py-0.5 px-[0.28rem] dark:border-neutral-700 border-neutral-300">
+              K
+            </div>
             </div>
           </div>
         </DialogTrigger>

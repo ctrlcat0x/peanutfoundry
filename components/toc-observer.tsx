@@ -47,21 +47,39 @@ export default function TocObserver({ data }: Props) {
   }, [data]);
 
   return (
-    <div className="flex flex-col gap-2.5 text-sm dark:text-stone-300/85 text-stone-800 ml-0.5">
+    <div className="relative flex flex-col gap-2.5 text-sm dark:text-stone-300/85 text-stone-800 ml-0.5">
+      {/* Vertical line */}
+      <span
+        className="absolute left-0 top-0 h-full w-0.5 bg-stone-200 dark:bg-stone-700 pointer-events-none"
+        aria-hidden="true"
+        style={{ zIndex: 0 }}
+      />
       {data.map(({ href, level, text }, index) => {
+        const isActive = activeId == href.slice(1);
         return (
           <Link
             key={href + text + level + index}
             href={href}
-            className={clsx({
-              "pl-0": level == 2,
-              "pl-4": level == 3,
-              "pl-8 ": level == 4,
-              "dark:font-medium font-semibold text-primary":
-                activeId == href.slice(1),
-            })}
+            className={clsx(
+              "relative flex items-center transition-colors duration-150 ml-4",
+              {
+                "pl-0": level == 2,
+                "pl-4": level == 3,
+                "pl-8": level == 4,
+                "dark:font-medium font-semibold text-primary": isActive,
+              }
+            )}
+            aria-current={isActive ? "location" : undefined}
+            tabIndex={0}
           >
-            {text}
+            {isActive && (
+              <span
+                className="absolute -left-4 top-0 h-full w-0.5 bg-primary pointer-events-none"
+                aria-hidden="true"
+                style={{ zIndex: 1 }}
+              />
+            )}
+            <span>{text}</span>
           </Link>
         );
       })}

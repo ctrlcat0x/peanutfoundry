@@ -1,5 +1,5 @@
 import { ModeToggle } from "@/components/theme-toggle";
-import { Github } from "lucide-react";
+import { FaGithub,FaDiscord } from "react-icons/fa";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import Search from "./search";
@@ -40,14 +40,23 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <Search />
             <div className="flex ml-2.5 sm:ml-0">
+              <ModeToggle />
+              <div className="w-px h-6 bg-stone-300 dark:bg-stone-700 mx-2 mt-1.5" aria-hidden="true" />
+              <Link
+                target="_blank"
+                href="https://discord.gg/j3XamDgjnM"
+                className={buttonVariants({ variant: "ghost", size: "icon" })}
+                aria-label="Join us on Discord"
+              >
+                <FaDiscord className="h-[1.1rem] w-[1.1rem]" />
+              </Link>
               <Link
                 target="_blank"
                 href="https://github.com/ctrlcat0x/peanutfoundry"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
-                <Github className="h-[1.1rem] w-[1.1rem]" />
+                <FaGithub className="h-[1.1rem] w-[1.1rem]" />
               </Link>
-              <ModeToggle />
             </div>
           </div>
         </div>
@@ -59,7 +68,7 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5 ">
-      <Image src="/anya_stare.png" alt="Anya Forger Peanut Foundry Logo" width={24} height={24} />
+      <Image src="/anya_stare.png" alt="Anya Forger Peanut Foundry Logo" className="pixelRender" width={24} height={24} />
       <h2 className="text-md font-bold">Peanut Foundry</h2>
     </Link>
   );

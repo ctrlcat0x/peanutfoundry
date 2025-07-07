@@ -548,8 +548,11 @@ pre > code {
   background-color: hsl(var(--foreground));
   color: hsl(var(--background));
 }
+.pixelRender {
+  image-rendering: pixelated;
+}
 .starBack {
-  opacity: 0.014;
+  opacity: 0.013;
   background-repeat: repeat;
   background-size: 120px 120px;
   background-position: center;

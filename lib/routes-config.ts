@@ -1,12 +1,12 @@
 // for page navigation & to sort on leftbar
 
 export type EachRoute = {
-  title: string;
-  href: string;
-  noLink?: true; // noLink will create a route segment (section) but cannot be navigated
-  items?: EachRoute[];
-  tag?: string;
-};
+      title: string;
+      href: string;
+      noLink?: true; // noLink will create a route segment (section) but cannot be navigated
+      items?: EachRoute[];
+      tag?: string;
+    };
 
 export const ROUTES: EachRoute[] = [
   {
@@ -14,7 +14,9 @@ export const ROUTES: EachRoute[] = [
     href: "/getting-started",
     noLink: true,
     items: [
-      { title: "Introduction", href: "/introduction" },
+      { title: "Beginners Guide", href: "/beginners-guide"},
+      { title: "About Peanut Foundry", href: "/about" },
+      { title: "Contribute", href: "/contribute" },
     ],
   },
   {
@@ -30,7 +32,6 @@ export const ROUTES: EachRoute[] = [
   {
     title: "App Guides",
     href: "/app-guides",
-    tag: "Essential",
     noLink: true,
     items: [
       { title: "Introduction", 
