@@ -30,29 +30,48 @@ export const ROUTES: EachRoute[] = [
     noLink: true,
   },
   {
-    title: "App Guides",
-    href: "/app-guides",
+    title: "The Wiki",
+    href: "/wiki",
     noLink: true,
     items: [
-      { title: "Introduction", 
-        href: "/introduction" 
-      },
-      { title: "Using Ninite", 
-        href: "/ninite" 
-      },
-      { title: "Using WinGet", 
-        href: "/winget" 
-      },
-      {
-        title: "Apps",
-        href: "/apps",
+      { title: "Adblocking & Privacy", 
+        href: "/adblockingPrivacy",
         items: [
-          { title: "Discord", href: "/discord" },
-          { title: "Youtube Music", href: "/youtubeMusic" },
-          { title: "Hydra Launcher", href: "/hydraLauncher" },
-          { title: "Spotify", href: "/spotify" },
+          { title: "Adblockers", href: "/adblockers" },
+          { title: "DNS", href: "/dns" },
         ],
       },
+      { title: "🔞 NSFW", 
+        href: "/nsfw",
+        items: [
+          {title: "Anime", href: "/anime"},
+          {title: "Manga", href: "/manga"},
+          {title: "Illustrations", href: "/illustrations"},
+          {title: "Porn", href: "/porn"},
+          {title: "Games", href: "/games"},
+          {title: "Software", href: "/software"},
+        ],
+      },
+    ],
+  },
+  {
+    title: "",
+    href: "",
+    noLink: true,
+  },
+  {
+    title: "",
+    href: "",
+    noLink: true,
+  },
+  {
+    title: "Useful Tools",
+    href: "/tools",
+    noLink: true,
+    items: [
+      { title: "Beginners Guide", href: "/beginners-guide"},
+      { title: "About Peanut Foundry", href: "/about" },
+      { title: "Contribute", href: "/contribute" },
     ],
   },
 ];

@@ -1,5 +1,5 @@
 import { ModeToggle } from "@/components/theme-toggle";
-import { FaGithub,FaDiscord } from "react-icons/fa";
+import { FaGithub,FaDiscord,FaRedditAlien } from "react-icons/fa";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import Search from "./search";
@@ -15,7 +15,7 @@ export const NAVLINKS = [
     href: `/docs${page_routes[0].href}`,
   },
   {
-    title: "Detailed Guides",
+    title: "Detailed Guides & Blog",
     href: `/guide`,
   },
 ];
@@ -52,6 +52,14 @@ export function Navbar() {
               </Link>
               <Link
                 target="_blank"
+                href=""
+                className={buttonVariants({ variant: "ghost", size: "icon" })}
+                aria-label="Join us on Reddit"
+              >
+                <FaRedditAlien className="h-[1.1rem] w-[1.1rem]" />
+              </Link>
+              <Link
+                target="_blank"
                 href="https://github.com/ctrlcat0x/peanutfoundry"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
@@ -68,7 +76,7 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5 ">
-      <Image src="/anya_stare.png" alt="Anya Forger Peanut Foundry Logo" className="pixelRender" width={24} height={24} />
+      <Image src="/anya_stare.png" alt="Anya Forger Peanut Foundry Logo" className="pixelRender w-7 h-7" width={28} height={28} />
       <h2 className="text-md font-bold">Peanut Foundry</h2>
     </Link>
   );

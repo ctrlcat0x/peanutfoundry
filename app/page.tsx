@@ -2,7 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { Shield, Brain, Headphones, Gamepad2, Sparkles, Star } from "lucide-react";
 import Image from "next/image";
-
+const docPath =  "/docs/wiki/";
 export default function Home() {
   return (
     <div className="flex sm:min-h-[85.5vh] min-h-[85vh] flex-col items-center justify-center text-center px-2 sm:py-8 py-12 relative overflow-hidden">
@@ -16,7 +16,7 @@ export default function Home() {
           alt="Anya Forger Peanut Foundry Banner"
           width={800}
           height={220}
-          className="rounded-xl object-cover max-w-full h-auto"
+          className="rounded-xl object-cover w-auto h-auto"
           priority
         />
       </div>
@@ -81,22 +81,22 @@ export default function Home() {
         </svg>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-5xl mt-4">
-        <SectionBox icon={<Shield />} title="Adblocking / Privacy" desc="Block ads, trackers, and protect your privacy everywhere." />
-        <SectionBox icon={<Brain />} title="AI & Tools" desc="Explore AI, productivity, and automation tools." />
-        <SectionBox icon={<Headphones />} title="Music & Audio" desc="Stream, download, and enjoy music and podcasts." />
-        <SectionBox icon={<Gamepad2 />} title="Gaming" desc="Discover, download, and play your favorite games." />
-        <SectionBox icon={<Shield />} title="Adblocking / Privacy" desc="Block ads, trackers, and protect your privacy everywhere." />
-        <SectionBox icon={<Brain />} title="AI & Tools" desc="Explore AI, productivity, and automation tools." />
-        <SectionBox icon={<Headphones />} title="Music & Audio" desc="Stream, download, and enjoy music and podcasts." />
-        <SectionBox icon={<Gamepad2 />} title="Gaming" desc="Discover, download, and play your favorite games." />
+        <SectionBox icon={<Shield />} path="adblockingPrivacy" title="Adblocking / Privacy" desc="Block ads, trackers, and protect your privacy everywhere." />
+        <SectionBox icon={<Brain />} path="" title="AI & Tools" desc="Explore AI, productivity, and automation tools." />
+        <SectionBox icon={<Headphones />} path="" title="Music & Audio" desc="Stream, download, and enjoy music and podcasts." />
+        <SectionBox icon={<Gamepad2 />} path="" title="Gaming" desc="Discover, download, and play your favorite games." />
+        <SectionBox icon={<Shield />} path="" title="Adblocking / Privacy" desc="Block ads, trackers, and protect your privacy everywhere." />
+        <SectionBox icon={<Brain />} path="" title="AI & Tools" desc="Explore AI, productivity, and automation tools." />
+        <SectionBox icon={<Headphones />} path="" title="Music & Audio" desc="Stream, download, and enjoy music and podcasts." />
+        <SectionBox icon={<Gamepad2 />} path="" title="Gaming" desc="Discover, download, and play your favorite games." />
       </div>
     </div>
   );
 }
 
-const SectionBox = ({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) => (
+const SectionBox = ({ icon, path, title, desc }: { icon: React.ReactNode; path: string; title: string; desc: string }) => (
   <a
-    href="#"
+    href={docPath+path}
     className="accent-box rounded-xl border transition-colors cursor-pointer p-6 flex flex-col items-start gap-2 focus-visible:outline-none text-left"
     tabIndex={0}
     aria-label={title}
