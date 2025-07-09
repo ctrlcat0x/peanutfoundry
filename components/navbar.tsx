@@ -1,3 +1,6 @@
+"use client";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import { ModeToggle } from "@/components/theme-toggle";
 import { FaGithub,FaDiscord,FaRedditAlien } from "react-icons/fa";
 import Link from "next/link";
@@ -21,8 +24,16 @@ export const NAVLINKS = [
 ];
 
 export function Navbar() {
+  const navRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    gsap.fromTo(
+      navRef.current,
+      { opacity: 0, y: -40 },
+      { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }
+    );
+  }, []);
   return (
-    <nav className="sticky top-0 z-50 h-14 w-full border-b bg-background/80 backdrop-blur-lg supports-[backdrop-filter]:bg-background/70">
+    <nav ref={navRef} className="sticky top-0 z-50 h-14 w-full border-b bg-background/80 backdrop-blur-lg supports-[backdrop-filter]:bg-background/70">
       <div className="sm:container mx-auto w-[95vw] h-full flex items-center justify-between md:gap-2">
         <div className="flex items-center gap-5">
           <SheetLeftbar />
